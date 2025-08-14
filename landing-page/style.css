@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: var(--cinza);
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
   color: var(--cinza-escuro);
   padding-top: 80px;
 }
@@ -38,11 +38,16 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 18px 40px;
-  background: rgba(24, 27, 32, 0.842);
-  box-shadow: 0 4px 24px rgba(35, 39, 47, 0.08);
   z-index: 1000;
   backdrop-filter: blur(8px);
   margin-top: 10px;
+  border-radius: 12px;
+background: rgba(25, 26, 31, 0.644);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+border: 1px solid rgba(34, 31, 31, 0.3);
 }
 
 .cor1{
@@ -114,6 +119,13 @@ header nav a:hover::after {
   gap: 22px;
   justify-content: center;
   color: var();
+  padding: 40px;
+  background: rgba(34, 31, 31, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(34, 31, 31, 0.3);
 }
 
 .hero-text h2 {
@@ -207,9 +219,7 @@ header nav a:hover::after {
 }
 
 .card {
-  background: var(--cinza-medio);
   border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(35,39,47,0.12);
   padding: 32px 24px;
   min-width: 220px;
   flex: 1;
@@ -218,7 +228,12 @@ header nav a:hover::after {
   align-items: flex-start;
   transition: box-shadow 0.3s, transform 0.3s;
   cursor: pointer;
-  border: 1px solid rgba(96,165,250,0.08);
+  background: rgba(27, 32, 41, 0.452);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(34, 31, 31, 0.3);
 }
 
 .card:hover {
@@ -390,3 +405,36 @@ footer {
     min-width: 0;
   }
 }
+
+.glass-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 0.45;
+  mix-blend-mode: lighten;
+}
+
+/* Círculo azul */
+.circle1 {
+  width: 420px; height: 420px;
+  background: linear-gradient(135deg, #087bff 60%, #232830 90%);
+  top: 0%; left: 5%;
+}
+
+/* Círculo rosa */
+.circle2 {
+  width: 320px; height: 320px;
+  background: linear-gradient(135deg, #FF3366 60%, #2C313A 100%);
+  bottom: 10%; right: 8%;
+}
+
+
